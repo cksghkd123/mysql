@@ -24,3 +24,5 @@ soup = BeautifulSoup(res.content, 'html.parser')
 categories = soup.select('div.gbest-cate ul.by-group li a')
 for category in categories:
     print( 'http://corners.gmarket.co.kr/' + category['href'] + category.get_text())
+
+def get_category()
